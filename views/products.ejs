@@ -1,0 +1,10 @@
+<%- include('./partials/head') %>
+<h1 class="title">Productos</h1>
+<ul class="list">
+    <% products.forEach(prod => { %>
+        <li class="items">
+            <%= prod.product %>, <%=prod.price%>, <img src=`<%=prod.url%>` alt="img">
+        </li>
+    <% }) %>
+</ul>
+<a href="/"><button class="btnProducts">Volver</button></a>
